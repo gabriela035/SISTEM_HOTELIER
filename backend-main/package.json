@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.16",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "nodemon": "^3.1.0",
+    "router": "^1.3.8",
+    "stripe": "^14.5.0",
+    "uuid": "^9.0.1"
+  },
+  "name": "hotel-project",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"[Error]: test not specified!\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

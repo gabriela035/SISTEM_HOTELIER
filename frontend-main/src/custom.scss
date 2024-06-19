@@ -1,0 +1,12 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  'primary':#355070,
+  'info': #eaac8b,
+  'danger': #bc4b51,
+  'text-danger':white
+);
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';

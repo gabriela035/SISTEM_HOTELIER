@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #fbf2b646 !important ;
+  /* background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp'); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* .navbar{
+  background-color: rgb(9, 81, 95) !important;
+}
+.nav-link{
+  color: white!important;
+}
+.navbar-brand{
+  color:white  !important;
+}
+.navbar-nav{
+  margin-left: auto !important;
+} */
+.smallimg {
+  height: 200px;
+  width: 100% !important;
+  border-radius: 5px !important;
+}
+
+h1 {
+  font-size: 20px !important;
+}
+
+.bs {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  background-color: #d8f7ff;
+  height: 70px;
+}
+.dropdown-toggle{
+  color:white !important
+}
+.ant-input {
+  border-color: #737373a2 !important;
+}
+
+/* Override for Antd Select component */
+.ant-select-selector {
+  border-color: #737373a2 !important;
+}
+
+/* Override for Antd DatePicker component */
+.ant-picker {
+  border-color: #737373a2 !important;
+}
+/* Override text color for Antd Input component */
+.ant-input {
+  color: #212020a2 !important; /* Example text color: green */
+}
+
+/* Override text color for Antd Select component */
+.ant-select-selector {
+  color: #212020a2 !important; /* Example text color: green */
+}
+
+/* Override text color for Antd Select dropdown items */
+.ant-select-item-option-content {
+  color: #212020a2 !important; /* Example text color: green */
+}
+
+/* Override text color for Antd DatePicker input */
+.ant-picker-input > input {
+  color: #212020a2 !important; /* Example text color: green */
+}
+
+/* Override text color for placeholder in Antd Input component */
+.ant-input::placeholder {
+  color: #212020a2 !important; /* Example text color: green */
+  opacity: 1; /* Ensures the color is applied */
+}
+
+/* Override text color for placeholder in Antd Select component */
+.ant-select-selection-placeholder {
+  color: #212020a2 !important; /* Example text color: green */
+}
+
+/* Override text color for placeholder in Antd DatePicker component */
+.ant-picker-input > input::placeholder {
+  color: #212020a2 !important; /* Example text color: green */
+}
+
+.ant-tabs-nav-wrap {
+  justify-content: center !important;
+  background-color: rgba(204, 204, 204, 0.366);
+  padding: 20px;
+  border:1px solid rgba(109, 108, 108, 0.648);
+  border-radius: 10px;
+}
