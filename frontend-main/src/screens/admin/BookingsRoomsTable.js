@@ -192,7 +192,7 @@ export function BookingsRoomsTable() {
         </div>
       </div>
 
-      <div className="container mb-5" style={{ maxWidth: "83%" }}>
+      {/*<div className="container mb-5" style={{ maxWidth: "83%" }}>
         <div
           style={{
             display: "flex",
@@ -243,7 +243,7 @@ export function BookingsRoomsTable() {
             ))}
           </tbody>
         </Table>
-      </div>
+      </div>*/}
     </>
   );
 }
