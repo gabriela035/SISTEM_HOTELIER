@@ -1,4 +1,4 @@
-import { axiosInstance, convertToObjectIdArray } from './rooms';
+import { axiosInstance } from './rooms';
 export function getAllApartments() {
     return axiosInstance.get('/api/apartments/getAllApartments')
 }

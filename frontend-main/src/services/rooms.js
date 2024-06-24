@@ -1,7 +1,6 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  // baseURL: "https://hotel-szz.onrender.com",
   baseURL: "http://localhost:5000",
   headers: {
     "Content-Type": "application/json",
@@ -103,18 +102,6 @@ export function editRoom(data, id) {
     return axiosInstance.put(`/api/rooms/${id}`, formData);
   }
   
-  // Helper function to convert value or array of values to an array of ObjectIds
-export  function convertToObjectIdArray(value) {
-    if (!value) {
-      return [];
-    }
-  
-    if (Array.isArray(value)) {
-      return value.map((item) => item?._id);
-    }
-  
-    return [value?._id];
-  }
 
 export const getRoomByID = (id) => {
   return axiosInstance.get(`/api/rooms/${id}`);

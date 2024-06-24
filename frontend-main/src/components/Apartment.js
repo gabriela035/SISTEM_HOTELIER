@@ -21,8 +21,6 @@ const RoomCard = ({ room }) => {
       <Card.Body>
         <Card.Title>Room: {room.room_number}</Card.Title>
         <Card.Text>
-          {/* Add room-specific details */}
-          {/* Example: {room.details} */}
         </Card.Text>
       </Card.Body>
     </Card>
@@ -38,7 +36,6 @@ function Apartment({ apartment, fromDate, toDate }) {
     if (user) {
       getFavouritesApartmentByUserID(user?._id)
         .then((response) => {
-          // setUserFavorites(response.data.favorites);
           setIsFavorite(
             response?.data?.favouritesApartments?.some(
               (fav) => fav._id === apartment?._id
@@ -53,9 +50,7 @@ function Apartment({ apartment, fromDate, toDate }) {
   }, [user, apartment]);
 
   const isUserLoggedIn = !!user;
-  // eslint-disable-next-line no-unused-vars
   const isRoomTaken = () => {
-    //CHANGE HERRE
     if (!apartment || !apartment.current_bookings || !fromDate || !toDate) {
       return false;
     }
@@ -76,19 +71,18 @@ function Apartment({ apartment, fromDate, toDate }) {
         (checkToDate >= bookingFromDate && checkToDate <= bookingToDate) ||
         (checkFromDate <= bookingFromDate && checkToDate >= bookingToDate)
       ) {
-        return true; // Room is taken during the provided date range
+        return true; // Room is taken
       }
     }
 
-    return false; // Room is available for the provided date range
+    return false; // Room is available
   };
 
-  // eslint-disable-next-line no-unused-vars
   const hasImages =
     apartment &&
     apartment.roomID.image_urls &&
     apartment.roomID.image_urls.length > 0;
-  //const roomAvailable = !isRoomTaken(); // Check if the room is available
+
   const isApartmentTaken = () => {
     if (!apartment || !apartment.current_bookings || !fromDate || !toDate) {
       return false;

@@ -18,7 +18,6 @@ import { Tag } from "antd";
 
 function Room({ room, fromDate, toDate }) {
   const { user } = useLoginContext();
-  // const [userFavorites, setUserFavorites] = useState([]);
   const [isFavorite, setIsFavorite] = useState(false);
   const [loading, setIsLoading] = useState(true);
   const [show, setShow] = useState(false);
@@ -30,7 +29,6 @@ function Room({ room, fromDate, toDate }) {
     if (user) {
       getFavouritesByUserID(user?._id)
         .then((response) => {
-          // setUserFavorites(response.data.favorites);
           setIsFavorite(
             response.data.favorites.some((fav) => fav._id === room?._id)
           );
@@ -81,9 +79,6 @@ function Room({ room, fromDate, toDate }) {
     </Tooltip>
   );
 
-  // if(loading){
-  //   return  <Spinner animation="border" />;
-  // }
 
   return (
     <div className="row bs" style={{backgroundColor:'white'}}>

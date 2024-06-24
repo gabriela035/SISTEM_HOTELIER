@@ -9,11 +9,6 @@ import { useNavigate } from "react-router-dom";
 export function ApartmentsAdminTable() {
   const { data: apartments = [], refetchData } = useFetchData(() => getAllApartments());
   const navigate = useNavigate();
-  // apartments.map(ap=>
-  //   ap.roomID.map(r=>
-  //     r.inventoryID.map(i=> console.log(i))
-  //     )
-  // )
   const [idToDelete, setIdToDelete] = useState("");
   const [open, setOpen] = useState(false);
   const handleClickOpen = (id) => {
